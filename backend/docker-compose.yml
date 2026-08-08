@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16
+    container_name: nest_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USERNAME:-nest_admin}
+      # Sin valor por defecto a propósito: si falta en el .env, el compose falla
+      # en vez de levantar una base con una contraseña que nadie eligió.
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?falta DB_PASSWORD en backend/.env}
+      POSTGRES_DB: ${DB_NAME:-mh}
+    ports:
+      # El contenedor que ya está corriendo publica 2345, y el .env apunta ahí.
+      # Con 5432 hardcodeado, un `docker compose up` limpio dejaba a la app sin
+      # poder conectarse.
+      - "${DB_PORT:-2345}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

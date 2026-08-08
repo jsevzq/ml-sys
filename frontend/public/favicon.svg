@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200" height="200" width="200">
+  
+  <rect fill="white" rx="40" height="200" width="200"></rect>
+  
+  
+  <text text-anchor="middle" fill="#0052CC" font-weight="900" font-size="110" font-family="Arial Black, sans-serif" y="125" x="100">
+    MH
+  </text>
+</svg>
