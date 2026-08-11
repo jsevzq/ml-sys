@@ -4,7 +4,7 @@
 [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
 [![Node 22](https://img.shields.io/badge/node-%3E%3D22-green.svg)](.nvmrc)
 
-Sistema de gestión para un vendedor de Mercado Libre que **importa** la mercadería que vende. Sincroniza el catálogo y las ventas desde la API de Mercado Libre, registra cada importación con su costo real puesto en depósito y atribuye cada venta a un lote por FIFO, para responder la pregunta que la plataforma no responde: **cuánto se ganó**.
+Sistema de gestión para vendedores de Mercado Libre que **importan** la mercadería que venden. Sincroniza el catálogo y las ventas desde la API de Mercado Libre, registra cada importación con su costo real puesto en depósito y atribuye cada venta a un lote por FIFO, para responder la pregunta que la plataforma no responde: **cuánto se ganó**.
 
 ![Panel de control](docs/capturas/dashboard.png)
 
